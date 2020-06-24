@@ -1,7 +1,12 @@
-collection = []
+array = []
 
-my_collection(array) do |name|
-  name.split(" ").first
+def collect
+  i = 0
+  collection = []
+  while i < array.length
+    collection.push yield(array[i])
+    i += 1
+  end
+  collection 
 end
-
 
