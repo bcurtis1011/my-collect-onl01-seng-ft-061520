@@ -1,6 +1,6 @@
 array = []
 
-def collect
+def my_collect
   if block_given?
   i = 0
   collection = []
