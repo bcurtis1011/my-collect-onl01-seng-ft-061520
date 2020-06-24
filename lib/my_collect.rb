@@ -1,6 +1,7 @@
 array = []
 
 def collect
+  if block_given?
   i = 0
   collection = []
   while i < array.length
@@ -8,5 +9,7 @@ def collect
     i += 1
   end
   collection 
+  else
+    puts "Hey! No block was given!"
 end
 
