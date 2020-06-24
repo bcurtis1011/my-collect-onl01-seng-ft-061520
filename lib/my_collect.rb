@@ -11,5 +11,6 @@ def collect
   collection 
   else
     puts "Hey! No block was given!"
+  end
 end
 
